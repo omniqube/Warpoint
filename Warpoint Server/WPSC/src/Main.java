@@ -1,13 +1,36 @@
+
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 // Warpoint Server Setup and Configuration tool
 
 public class Main extends javax.swing.JFrame {
     public boolean flip = true;
 
-    public static String version = "A0"; // Version of the tool
+    public String version = "A0"; // Version of the tool
     public Main() {
         initComponents();
     }
 
+    public void callINI(
+    boolean isGlobal, 
+    String IP, 
+    int Port,
+    
+    String ServerName,
+    String ServerDescription,
+    boolean isCustom,
+    int MaxPlayers,
+    int GameLength,
+    
+    boolean AnticheatEnabled,
+    boolean SpeedhackProtection,
+    boolean ValuehackProtection,
+    boolean ItemhackProtection
+    ) {
+       
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -401,6 +424,11 @@ public class Main extends javax.swing.JFrame {
 
         Button_Accept.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         Button_Accept.setText("Accept");
+        Button_Accept.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button_AcceptActionPerformed(evt);
+            }
+        });
 
         Text_Version.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         Text_Version.setText(version);
@@ -552,7 +580,46 @@ public class Main extends javax.swing.JFrame {
         Combo_Length.setEnabled(false);
     }//GEN-LAST:event_Button_Rad_ClassicActionPerformed
 
+    private void Button_AcceptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_AcceptActionPerformed
+        boolean isGlobal = Button_Rad_Global.isSelected();
+        String IP = Field_IP.getText();
+        int Port = Integer.parseInt(Field_Port.getText());
+        
+        String ServerName = Field_ServerName.getText();
+        String ServerDescription = Area_Description.getText();
+        boolean isCustom = Button_Rad_GMCustom.isSelected();
+        int MaxPlayers = 0, GameLength = 0;
+        switch (Combo_Players.getSelectedIndex()) {
+            case 0: MaxPlayers = 6; break;
+            case 1: MaxPlayers = 8; break;
+            case 2: MaxPlayers = 10; break;
+            case 3: MaxPlayers = 12; break;
+        }
+        switch (Combo_Length.getSelectedIndex()) {
+            case 0: GameLength = 30; break;
+            case 1: GameLength = 60; break;
+            case 2: GameLength = 90; break;
+        }
+        boolean AnticheatEnabled = Check_Anticheat_Toggle.isSelected();
+        boolean SpeedhackProtection = Check_Anticheat_Speedhack.isSelected();
+        boolean ValuehackProtection = Check_Anticheat_Valuehack.isSelected();
+        boolean ItemhackProtection = Check_Anticheat_Itemhack.isSelected();
+        
+        INICompiler i = new INICompiler();
+        
+        try {
+            i.WriteINI(isGlobal, IP, Port, ServerName, ServerDescription, isCustom, MaxPlayers, GameLength, AnticheatEnabled, SpeedhackProtection, ValuehackProtection, ItemhackProtection);
+        } catch (IOException ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        System.exit(0);
+    }//GEN-LAST:event_Button_AcceptActionPerformed
+
     public static void main(String args[]) {
+        String WorkingDirectory = System.getProperty("user.dir");
+        System.out.println(WorkingDirectory);
+        
         
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
