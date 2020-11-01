@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Startserver",
-    "path": "sprites/Startserver/Startserver.yy",
+    "name": "Network_Drive_Error",
+    "path": "sprites/Network_Drive_Error/Network_Drive_Error.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,17 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":6,"collisionObjectId":null,"parent":{"name":"Launchserver","path":"objects/Launchserver/Launchserver.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Menu",
-    "path": "folders/Objects/Menu.yy",
+    "name": "Dashboard",
+    "path": "folders/Objects/Dashboard.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Launchserver",
+  "name": "Shutdown",
   "tags": [],
   "resourceType": "GMObject",
 }

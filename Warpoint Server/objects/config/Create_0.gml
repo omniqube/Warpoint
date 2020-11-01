@@ -24,7 +24,7 @@ if (!(file_exists(configfile))) {show_message(
 ini_open(configfile);
 global.servermode = ini_read_string("Network", "Global", "");
 global.IP = ini_read_string("Network", "IP", "");
-global.Port = ini_read_real("Network", "Port", "");
+global.port = ini_read_real("Network", "Port", "");
 
 global.servername = ini_read_string("Game", "Name", "");
 global.serverdesc = ini_read_string("Game", "Description", "");
