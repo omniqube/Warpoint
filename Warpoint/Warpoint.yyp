@@ -1,5 +1,8 @@
 {
   "resources": [
+    {"id":{"name":"spr_player_downright_idle","path":"sprites/spr_player_downright_idle/spr_player_downright_idle.yy",},"order":1,},
+    {"id":{"name":"spr_player_downleft_idle","path":"sprites/spr_player_downleft_idle/spr_player_downleft_idle.yy",},"order":0,},
+    {"id":{"name":"spr_player_upleft_idle","path":"sprites/spr_player_upleft_idle/spr_player_upleft_idle.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
