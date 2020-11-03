@@ -1,7 +1,12 @@
 {
   "resources": [
+    {"id":{"name":"spr_player_upleft_run","path":"sprites/spr_player_upleft_run/spr_player_upleft_run.yy",},"order":6,},
+    {"id":{"name":"spr_player_upright_idle","path":"sprites/spr_player_upright_idle/spr_player_upright_idle.yy",},"order":3,},
     {"id":{"name":"spr_player_downright_idle","path":"sprites/spr_player_downright_idle/spr_player_downright_idle.yy",},"order":1,},
     {"id":{"name":"spr_player_downleft_idle","path":"sprites/spr_player_downleft_idle/spr_player_downleft_idle.yy",},"order":0,},
+    {"id":{"name":"spr_player_downleft_run","path":"sprites/spr_player_downleft_run/spr_player_downleft_run.yy",},"order":4,},
+    {"id":{"name":"spr_player_upright_run","path":"sprites/spr_player_upright_run/spr_player_upright_run.yy",},"order":7,},
+    {"id":{"name":"spr_player_downright_run","path":"sprites/spr_player_downright_run/spr_player_downright_run.yy",},"order":5,},
     {"id":{"name":"spr_player_upleft_idle","path":"sprites/spr_player_upleft_idle/spr_player_upleft_idle.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
