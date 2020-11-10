@@ -190,6 +190,9 @@
                 <Property name="text" type="java.lang.String" value="Local"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Rad_LocalActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="Text_NetworkMode">
               <Properties>
@@ -205,6 +208,9 @@
                 <Property name="enabled" type="boolean" value="false"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Rad_GlobalActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="Text_NetworkMode1">
               <Properties>
@@ -218,6 +224,7 @@
             <Component class="javax.swing.JTextField" name="Field_IP">
               <Properties>
                 <Property name="text" type="java.lang.String" value="192.168.1.1"/>
+                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
                 <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="Field_IPKeyTyped"/>
@@ -597,6 +604,92 @@
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Anticheat unavailable in this version."/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="Tab_Developer">
+          <Properties>
+            <Property name="focusable" type="boolean" value="false"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Developer">
+                <Property name="tabTitle" type="java.lang.String" value="Developer"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="Check_Developer_FullReport" min="-2" max="-2" attributes="0"/>
+                          <Component id="Check_Developer_AdvLog" min="-2" max="-2" attributes="0"/>
+                          <Component id="Check_Developer_PacketLog" min="-2" max="-2" attributes="0"/>
+                          <Component id="Check_Developer_Sync" min="-2" max="-2" attributes="0"/>
+                          <Component id="Check_Developer_Toggle" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="281" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                      <Component id="Check_Developer_Toggle" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Component id="Check_Developer_AdvLog" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Check_Developer_PacketLog" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Check_Developer_FullReport" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="Check_Developer_Sync" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="258" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JCheckBox" name="Check_Developer_Toggle">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Enable Developer Options"/>
+                <Property name="focusable" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="Check_Developer_ToggleFocusLost"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Check_Developer_ToggleActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="Check_Developer_AdvLog">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Advanced Logging"/>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="focusable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="Check_Developer_PacketLog">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Packet Logging"/>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="focusable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="Check_Developer_FullReport">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Full Report Logging"/>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="focusable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="Check_Developer_Sync">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Synchronous Timing (TEST)"/>
+                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
           </SubComponents>

@@ -1,12 +1,11 @@
+// Warpoint Server Setup and Configuration tool
 
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-// Warpoint Server Setup and Configuration tool
-
 public class Main extends javax.swing.JFrame {
-    public boolean flip = true;
+    public boolean flip = true, flip2 = true;
 
     public String version = "A0"; // Version of the tool
     public Main() {
@@ -73,6 +72,12 @@ public class Main extends javax.swing.JFrame {
         Check_Anticheat_Valuehack = new javax.swing.JCheckBox();
         Check_Anticheat_Itemhack = new javax.swing.JCheckBox();
         jLabel2 = new javax.swing.JLabel();
+        Tab_Developer = new javax.swing.JPanel();
+        Check_Developer_Toggle = new javax.swing.JCheckBox();
+        Check_Developer_AdvLog = new javax.swing.JCheckBox();
+        Check_Developer_PacketLog = new javax.swing.JCheckBox();
+        Check_Developer_FullReport = new javax.swing.JCheckBox();
+        Check_Developer_Sync = new javax.swing.JCheckBox();
         Button_Cancel = new javax.swing.JButton();
         Button_Accept = new javax.swing.JButton();
         Text_Version = new javax.swing.JLabel();
@@ -97,6 +102,11 @@ public class Main extends javax.swing.JFrame {
         Button_Rad_Local.setSelected(true);
         Button_Rad_Local.setText("Local");
         Button_Rad_Local.setFocusable(false);
+        Button_Rad_Local.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button_Rad_LocalActionPerformed(evt);
+            }
+        });
 
         Text_NetworkMode.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         Text_NetworkMode.setText("Network Mode");
@@ -104,12 +114,18 @@ public class Main extends javax.swing.JFrame {
         Button_Rad_Global.setText("Global (UNAVAILABLE)");
         Button_Rad_Global.setEnabled(false);
         Button_Rad_Global.setFocusable(false);
+        Button_Rad_Global.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button_Rad_GlobalActionPerformed(evt);
+            }
+        });
 
         Text_NetworkMode1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         Text_NetworkMode1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Text_NetworkMode1.setText("IP");
 
         Field_IP.setText("192.168.1.1");
+        Field_IP.setEnabled(false);
         Field_IP.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 Field_IPKeyTyped(evt);
@@ -414,6 +430,68 @@ public class Main extends javax.swing.JFrame {
 
         Tab_Menu.addTab("Anticheat", Tab_Anticheat);
 
+        Tab_Developer.setFocusable(false);
+
+        Check_Developer_Toggle.setText("Enable Developer Options");
+        Check_Developer_Toggle.setFocusable(false);
+        Check_Developer_Toggle.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                Check_Developer_ToggleFocusLost(evt);
+            }
+        });
+        Check_Developer_Toggle.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Check_Developer_ToggleActionPerformed(evt);
+            }
+        });
+
+        Check_Developer_AdvLog.setText("Advanced Logging");
+        Check_Developer_AdvLog.setEnabled(false);
+        Check_Developer_AdvLog.setFocusable(false);
+
+        Check_Developer_PacketLog.setText("Packet Logging");
+        Check_Developer_PacketLog.setEnabled(false);
+        Check_Developer_PacketLog.setFocusable(false);
+
+        Check_Developer_FullReport.setText("Full Report Logging");
+        Check_Developer_FullReport.setEnabled(false);
+        Check_Developer_FullReport.setFocusable(false);
+
+        Check_Developer_Sync.setText("Synchronous Timing (TEST)");
+        Check_Developer_Sync.setEnabled(false);
+
+        javax.swing.GroupLayout Tab_DeveloperLayout = new javax.swing.GroupLayout(Tab_Developer);
+        Tab_Developer.setLayout(Tab_DeveloperLayout);
+        Tab_DeveloperLayout.setHorizontalGroup(
+            Tab_DeveloperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Tab_DeveloperLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(Tab_DeveloperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Check_Developer_FullReport)
+                    .addComponent(Check_Developer_AdvLog)
+                    .addComponent(Check_Developer_PacketLog)
+                    .addComponent(Check_Developer_Sync)
+                    .addComponent(Check_Developer_Toggle))
+                .addContainerGap(281, Short.MAX_VALUE))
+        );
+        Tab_DeveloperLayout.setVerticalGroup(
+            Tab_DeveloperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Tab_DeveloperLayout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(Check_Developer_Toggle)
+                .addGap(27, 27, 27)
+                .addComponent(Check_Developer_AdvLog)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Check_Developer_PacketLog)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Check_Developer_FullReport)
+                .addGap(45, 45, 45)
+                .addComponent(Check_Developer_Sync)
+                .addContainerGap(258, Short.MAX_VALUE))
+        );
+
+        Tab_Menu.addTab("Developer", Tab_Developer);
+
         Button_Cancel.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         Button_Cancel.setText("Cancel");
         Button_Cancel.addActionListener(new java.awt.event.ActionListener() {
@@ -605,16 +683,41 @@ public class Main extends javax.swing.JFrame {
         boolean ValuehackProtection = Check_Anticheat_Valuehack.isSelected();
         boolean ItemhackProtection = Check_Anticheat_Itemhack.isSelected();
         
+        boolean DeveloperEnabled = Check_Developer_Toggle.isSelected();
+        boolean AdvancedLogging = Check_Developer_AdvLog.isSelected();
+        boolean PacketLogging = Check_Developer_PacketLog.isSelected();
+        boolean FullReport = Check_Developer_FullReport.isSelected();
+        
         INICompiler i = new INICompiler();
         
         try {
-            i.WriteINI(isGlobal, IP, Port, ServerName, ServerDescription, isCustom, MaxPlayers, GameLength, AnticheatEnabled, SpeedhackProtection, ValuehackProtection, ItemhackProtection);
+            i.WriteINI(isGlobal, IP, Port, ServerName, ServerDescription, isCustom, MaxPlayers, GameLength, AnticheatEnabled, SpeedhackProtection, ValuehackProtection, ItemhackProtection, DeveloperEnabled, AdvancedLogging, PacketLogging, FullReport);
         } catch (IOException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         System.exit(0);
     }//GEN-LAST:event_Button_AcceptActionPerformed
+
+    private void Check_Developer_ToggleFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_Check_Developer_ToggleFocusLost
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Check_Developer_ToggleFocusLost
+
+    private void Check_Developer_ToggleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Check_Developer_ToggleActionPerformed
+        Check_Developer_AdvLog.setEnabled(flip2);
+        Check_Developer_PacketLog.setEnabled(flip2);
+        Check_Developer_FullReport.setEnabled(flip2);
+        
+        flip2 = !flip2;
+    }//GEN-LAST:event_Check_Developer_ToggleActionPerformed
+
+    private void Button_Rad_LocalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_Rad_LocalActionPerformed
+        Field_IP.setEnabled(false);
+    }//GEN-LAST:event_Button_Rad_LocalActionPerformed
+
+    private void Button_Rad_GlobalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_Rad_GlobalActionPerformed
+        Field_IP.setEnabled(true);
+    }//GEN-LAST:event_Button_Rad_GlobalActionPerformed
 
     public static void main(String args[]) {
         String WorkingDirectory = System.getProperty("user.dir");
@@ -669,12 +772,18 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JCheckBox Check_Anticheat_Speedhack;
     private javax.swing.JCheckBox Check_Anticheat_Toggle;
     private javax.swing.JCheckBox Check_Anticheat_Valuehack;
+    private javax.swing.JCheckBox Check_Developer_AdvLog;
+    private javax.swing.JCheckBox Check_Developer_FullReport;
+    private javax.swing.JCheckBox Check_Developer_PacketLog;
+    private javax.swing.JCheckBox Check_Developer_Sync;
+    private javax.swing.JCheckBox Check_Developer_Toggle;
     private javax.swing.JComboBox<String> Combo_Length;
     private javax.swing.JComboBox<String> Combo_Players;
     private javax.swing.JTextField Field_IP;
     private javax.swing.JTextField Field_Port;
     private javax.swing.JTextField Field_ServerName;
     private javax.swing.JPanel Tab_Anticheat;
+    private javax.swing.JPanel Tab_Developer;
     private javax.swing.JPanel Tab_Game;
     private javax.swing.JTabbedPane Tab_Menu;
     private javax.swing.JPanel Tab_Network;

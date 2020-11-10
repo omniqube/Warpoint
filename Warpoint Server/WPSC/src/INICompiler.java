@@ -18,10 +18,15 @@ public class INICompiler {
     boolean AnticheatEnabled,
     boolean SpeedhackProtection,
     boolean ValuehackProtection,
-    boolean ItemhackProtection
+    boolean ItemhackProtection,
+            
+    boolean DeveloperEnabled,
+    boolean AdvancedLogging,
+    boolean PacketLogging,
+    boolean FullReport
             
     ) throws IOException {
-        String NET = "Network", GME = "Game", ATC = "Anticheat";
+        String NET = "Network", GME = "Game", ATC = "Anticheat", DEV = "Developer";
         Wini w = new Wini(CreateINI());
         
         w.put(NET, "Global", isGlobal);
@@ -38,6 +43,11 @@ public class INICompiler {
         w.put(ATC, "SpeedhackP", SpeedhackProtection);
         w.put(ATC, "ValuehackP", ValuehackProtection);
         w.put(ATC, "ItemhackP", ItemhackProtection);
+        
+        w.put(DEV, "DeveloperEnabled", DeveloperEnabled);
+        w.put(DEV, "AdvancedLog", AdvancedLogging);
+        w.put(DEV, "PacketLog", PacketLogging);
+        w.put(DEV, "FullReport", FullReport);
         
         w.store();
     }

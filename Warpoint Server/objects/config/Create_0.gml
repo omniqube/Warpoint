@@ -36,6 +36,11 @@ ac_active = ini_read_string("Anticheat", "Anticheat", "");
 ac_speed = ini_read_string("Anticheat", "SpeedhackP", "");
 ac_value = ini_read_string("Anticheat", "ValuehackP", "");
 ac_item = ini_read_string("Anticheat", "ItemhackP", "");
+
+global.devmode = ini_read_string("Developer", "DeveloperEnabled", "");
+global.advlog = ini_read_string("Developer", "AdvancedLog", "");
+global.packetlog = ini_read_string("Developer", "PacketLog", "");
+global.fullreport = ini_read_string("Developer", "FullReport", "");
 ini_close();
 
 room_goto(menu);
