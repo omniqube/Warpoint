@@ -1,8 +1,12 @@
 {
   "resources": [
     {"id":{"name":"spr_player_upleft_run","path":"sprites/spr_player_upleft_run/spr_player_upleft_run.yy",},"order":6,},
+    {"id":{"name":"spr_moveCircle","path":"sprites/spr_moveCircle/spr_moveCircle.yy",},"order":8,},
+    {"id":{"name":"obj_moveCircle","path":"objects/obj_moveCircle/obj_moveCircle.yy",},"order":2,},
+    {"id":{"name":"obj_gui","path":"objects/obj_gui/obj_gui.yy",},"order":1,},
     {"id":{"name":"spr_player_upright_idle","path":"sprites/spr_player_upright_idle/spr_player_upright_idle.yy",},"order":3,},
     {"id":{"name":"spr_player_downright_idle","path":"sprites/spr_player_downright_idle/spr_player_downright_idle.yy",},"order":1,},
+    {"id":{"name":"Sprite10","path":"sprites/Sprite10/Sprite10.yy",},"order":9,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_player_downleft_idle","path":"sprites/spr_player_downleft_idle/spr_player_downleft_idle.yy",},"order":0,},
     {"id":{"name":"spr_player_downleft_run","path":"sprites/spr_player_downleft_run/spr_player_downleft_run.yy",},"order":4,},
