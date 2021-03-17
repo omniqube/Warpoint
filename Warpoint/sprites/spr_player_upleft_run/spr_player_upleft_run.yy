@@ -96,8 +96,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4de11ca3-303e-4127-aafa-a5976a3b4fd7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "player",
+    "path": "folders/Sprites/player.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_upleft_run",

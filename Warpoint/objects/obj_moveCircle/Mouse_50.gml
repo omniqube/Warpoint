@@ -10,7 +10,6 @@ yy = camera_get_view_y(view_camera[0])+480;
 if(mouse_x >= xx && mouse_y >= yy && mouse_x <= xx+240 && mouse_y <= yy+240){
 	active = 1;
 	angle = point_direction(xx+120,yy+120,mouse_x,mouse_y)
-	show_debug_message(angle)
 	distance = point_distance(xx+120,yy+120,mouse_x,mouse_y)
 	if(distance > 87){
 	distance = 87	
@@ -25,7 +24,6 @@ if(mouse_x >= xx && mouse_y >= yy && mouse_x <= xx+240 && mouse_y <= yy+240){
 	
 }else if(active = 1){
 	angle = point_direction(xx+120,yy+120,mouse_x,mouse_y)
-	show_debug_message(angle)
 	x = xx+120
 	y = yy+120
 	//
@@ -35,4 +33,3 @@ if(mouse_x >= xx && mouse_y >= yy && mouse_x <= xx+240 && mouse_y <= yy+240){
 	
 	
 }
-show_debug_message("speed: "+string(v))

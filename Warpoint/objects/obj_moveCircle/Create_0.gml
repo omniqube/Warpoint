@@ -4,3 +4,5 @@ xx = camera_get_view_x(view_camera[0])+0;
 yy = camera_get_view_y(view_camera[0])+480;
 active = 0;
 count = 0;
+angle = 0;
+v = 0;
