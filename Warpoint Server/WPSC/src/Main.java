@@ -72,16 +72,18 @@ public class Main extends javax.swing.JFrame {
         Check_Anticheat_Valuehack = new javax.swing.JCheckBox();
         Check_Anticheat_Itemhack = new javax.swing.JCheckBox();
         jLabel2 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         Tab_Developer = new javax.swing.JPanel();
         Check_Developer_Toggle = new javax.swing.JCheckBox();
         Check_Developer_AdvLog = new javax.swing.JCheckBox();
         Check_Developer_PacketLog = new javax.swing.JCheckBox();
         Check_Developer_FullReport = new javax.swing.JCheckBox();
-        Check_Developer_Sync = new javax.swing.JCheckBox();
         Button_Cancel = new javax.swing.JButton();
         Button_Accept = new javax.swing.JButton();
         Text_Version = new javax.swing.JLabel();
         Text_Title = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         Button_Group_Network.add(Button_Rad_Local);
         Button_Group_Network.add(Button_Rad_Global);
@@ -197,7 +199,7 @@ public class Main extends javax.swing.JFrame {
                         .addComponent(Button_Rad_Custom)
                         .addGap(18, 18, 18)
                         .addComponent(Field_Port, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Tab_NetworkLayout.setVerticalGroup(
             Tab_NetworkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -271,7 +273,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        Button_Rad_GMCustom.setText("Custom");
+        Button_Rad_GMCustom.setText("Custom (UNAVAILABLE)");
         Button_Rad_GMCustom.setFocusable(false);
         Button_Rad_GMCustom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -328,7 +330,7 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(jLabel9)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addComponent(Combo_Length, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
         Tab_GameLayout.setVerticalGroup(
             Tab_GameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -390,27 +392,40 @@ public class Main extends javax.swing.JFrame {
         Check_Anticheat_Valuehack.setEnabled(false);
         Check_Anticheat_Valuehack.setFocusable(false);
 
-        Check_Anticheat_Itemhack.setText("Itemhack Protection");
+        Check_Anticheat_Itemhack.setText("Item Cheating Protection");
         Check_Anticheat_Itemhack.setEnabled(false);
         Check_Anticheat_Itemhack.setFocusable(false);
 
         jLabel2.setText("Anticheat unavailable in this version.");
+
+        jLabel11.setForeground(new java.awt.Color(125, 125, 125));
+        jLabel11.setText("--- DATA PROTECTION ---");
+
+        jLabel12.setForeground(new java.awt.Color(125, 125, 125));
+        jLabel12.setText("--- MEMORY PROTECTION ---");
 
         javax.swing.GroupLayout Tab_AnticheatLayout = new javax.swing.GroupLayout(Tab_Anticheat);
         Tab_Anticheat.setLayout(Tab_AnticheatLayout);
         Tab_AnticheatLayout.setHorizontalGroup(
             Tab_AnticheatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Tab_AnticheatLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
                 .addGroup(Tab_AnticheatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Check_Anticheat_Itemhack)
-                    .addComponent(Check_Anticheat_Valuehack)
-                    .addComponent(Check_Anticheat_Speedhack)
                     .addGroup(Tab_AnticheatLayout.createSequentialGroup()
-                        .addComponent(Check_Anticheat_Toggle)
-                        .addGap(83, 83, 83)
-                        .addComponent(jLabel2)))
-                .addContainerGap(69, Short.MAX_VALUE))
+                        .addGap(21, 21, 21)
+                        .addGroup(Tab_AnticheatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Check_Anticheat_Valuehack)
+                            .addComponent(Check_Anticheat_Speedhack)
+                            .addGroup(Tab_AnticheatLayout.createSequentialGroup()
+                                .addComponent(Check_Anticheat_Toggle)
+                                .addGap(83, 83, 83)
+                                .addComponent(jLabel2))
+                            .addGroup(Tab_AnticheatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel12)
+                                .addComponent(Check_Anticheat_Itemhack))))
+                    .addGroup(Tab_AnticheatLayout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel11)))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
         Tab_AnticheatLayout.setVerticalGroup(
             Tab_AnticheatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -419,13 +434,17 @@ public class Main extends javax.swing.JFrame {
                 .addGroup(Tab_AnticheatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Check_Anticheat_Toggle)
                     .addComponent(jLabel2))
-                .addGap(39, 39, 39)
+                .addGap(31, 31, 31)
+                .addComponent(jLabel11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Check_Anticheat_Speedhack)
+                .addGap(20, 20, 20)
+                .addComponent(jLabel12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Check_Anticheat_Valuehack)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Check_Anticheat_Itemhack)
-                .addContainerGap(315, Short.MAX_VALUE))
+                .addContainerGap(265, Short.MAX_VALUE))
         );
 
         Tab_Menu.addTab("Anticheat", Tab_Anticheat);
@@ -453,12 +472,9 @@ public class Main extends javax.swing.JFrame {
         Check_Developer_PacketLog.setEnabled(false);
         Check_Developer_PacketLog.setFocusable(false);
 
-        Check_Developer_FullReport.setText("Full Report Logging");
+        Check_Developer_FullReport.setText("Full Debug Report");
         Check_Developer_FullReport.setEnabled(false);
         Check_Developer_FullReport.setFocusable(false);
-
-        Check_Developer_Sync.setText("Synchronous Timing (TEST)");
-        Check_Developer_Sync.setEnabled(false);
 
         javax.swing.GroupLayout Tab_DeveloperLayout = new javax.swing.GroupLayout(Tab_Developer);
         Tab_Developer.setLayout(Tab_DeveloperLayout);
@@ -470,9 +486,8 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(Check_Developer_FullReport)
                     .addComponent(Check_Developer_AdvLog)
                     .addComponent(Check_Developer_PacketLog)
-                    .addComponent(Check_Developer_Sync)
                     .addComponent(Check_Developer_Toggle))
-                .addContainerGap(281, Short.MAX_VALUE))
+                .addContainerGap(273, Short.MAX_VALUE))
         );
         Tab_DeveloperLayout.setVerticalGroup(
             Tab_DeveloperLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -485,9 +500,7 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(Check_Developer_PacketLog)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Check_Developer_FullReport)
-                .addGap(45, 45, 45)
-                .addComponent(Check_Developer_Sync)
-                .addContainerGap(258, Short.MAX_VALUE))
+                .addContainerGap(327, Short.MAX_VALUE))
         );
 
         Tab_Menu.addTab("Developer", Tab_Developer);
@@ -522,6 +535,8 @@ public class Main extends javax.swing.JFrame {
         Text_Title.setText("Warpoint Server Setup");
         Text_Title.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
+        jLabel10.setText("Some Features may not be available.");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -531,13 +546,15 @@ public class Main extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Tab_Menu)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(Text_Version)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel10)
+                            .addComponent(Text_Version))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(Button_Accept)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Button_Cancel)))
                 .addContainerGap())
-            .addComponent(Text_Title, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Text_Title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -555,8 +572,10 @@ public class Main extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Text_Version)
-                        .addContainerGap())))
+                        .addGap(12, 12, 12))))
         );
 
         Tab_Menu.getAccessibleContext().setAccessibleName("MainTab");
@@ -775,7 +794,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JCheckBox Check_Developer_AdvLog;
     private javax.swing.JCheckBox Check_Developer_FullReport;
     private javax.swing.JCheckBox Check_Developer_PacketLog;
-    private javax.swing.JCheckBox Check_Developer_Sync;
     private javax.swing.JCheckBox Check_Developer_Toggle;
     private javax.swing.JComboBox<String> Combo_Length;
     private javax.swing.JComboBox<String> Combo_Players;
@@ -792,6 +810,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel Text_Title;
     private javax.swing.JLabel Text_Version;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

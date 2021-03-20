@@ -54,7 +54,10 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="Tab_Menu" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="Text_Version" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                          <Component id="Text_Version" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="Button_Accept" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -63,7 +66,7 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
-          <Component id="Text_Title" alignment="1" max="32767" attributes="0"/>
+          <Component id="Text_Title" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -82,10 +85,12 @@
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="Text_Version" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Text_Version" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -119,7 +124,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -149,7 +154,7 @@
                               <Component id="Field_Port" min="-2" pref="57" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="25" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -329,7 +334,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="46" max="32767" attributes="0"/>
+                      <EmptySpace pref="27" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -458,7 +463,7 @@
             </Component>
             <Component class="javax.swing.JRadioButton" name="Button_Rad_GMCustom">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Custom"/>
+                <Property name="text" type="java.lang.String" value="Custom (UNAVAILABLE)"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
               <Events>
@@ -533,19 +538,30 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="Check_Anticheat_Itemhack" min="-2" max="-2" attributes="0"/>
-                          <Component id="Check_Anticheat_Valuehack" min="-2" max="-2" attributes="0"/>
-                          <Component id="Check_Anticheat_Speedhack" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Component id="Check_Anticheat_Toggle" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
-                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="Check_Anticheat_Valuehack" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Check_Anticheat_Speedhack" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="Check_Anticheat_Toggle" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Check_Anticheat_Itemhack" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="69" max="32767" attributes="0"/>
+                      <EmptySpace pref="50" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -557,13 +573,17 @@
                           <Component id="Check_Anticheat_Toggle" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="Check_Anticheat_Speedhack" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="Check_Anticheat_Valuehack" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="Check_Anticheat_Itemhack" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="315" max="32767" attributes="0"/>
+                      <EmptySpace pref="265" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -596,7 +616,7 @@
             </Component>
             <Component class="javax.swing.JCheckBox" name="Check_Anticheat_Itemhack">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Itemhack Protection"/>
+                <Property name="text" type="java.lang.String" value="Item Cheating Protection"/>
                 <Property name="enabled" type="boolean" value="false"/>
                 <Property name="focusable" type="boolean" value="false"/>
               </Properties>
@@ -604,6 +624,22 @@
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Anticheat unavailable in this version."/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel11">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7d" green="7d" red="7d" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="--- DATA PROTECTION ---"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel12">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7d" green="7d" red="7d" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="--- MEMORY PROTECTION ---"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -629,10 +665,9 @@
                           <Component id="Check_Developer_FullReport" min="-2" max="-2" attributes="0"/>
                           <Component id="Check_Developer_AdvLog" min="-2" max="-2" attributes="0"/>
                           <Component id="Check_Developer_PacketLog" min="-2" max="-2" attributes="0"/>
-                          <Component id="Check_Developer_Sync" min="-2" max="-2" attributes="0"/>
                           <Component id="Check_Developer_Toggle" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="281" max="32767" attributes="0"/>
+                      <EmptySpace pref="273" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -647,9 +682,7 @@
                       <Component id="Check_Developer_PacketLog" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="Check_Developer_FullReport" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                      <Component id="Check_Developer_Sync" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="258" max="32767" attributes="0"/>
+                      <EmptySpace pref="327" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -681,15 +714,9 @@
             </Component>
             <Component class="javax.swing.JCheckBox" name="Check_Developer_FullReport">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Full Report Logging"/>
+                <Property name="text" type="java.lang.String" value="Full Debug Report"/>
                 <Property name="enabled" type="boolean" value="false"/>
                 <Property name="focusable" type="boolean" value="false"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="Check_Developer_Sync">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Synchronous Timing (TEST)"/>
-                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -740,6 +767,11 @@
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="Warpoint Server Setup"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Some Features may not be available."/>
       </Properties>
     </Component>
   </SubComponents>
