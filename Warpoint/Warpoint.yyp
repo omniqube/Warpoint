@@ -35,6 +35,7 @@
     {"id":{"name":"obj_mainMenuLobby","path":"objects/obj_mainMenuLobby/obj_mainMenuLobby.yy",},"order":0,},
     {"id":{"name":"spr_colTriangleUpRight","path":"sprites/spr_colTriangleUpRight/spr_colTriangleUpRight.yy",},"order":3,},
     {"id":{"name":"spr_lobbyRed","path":"sprites/spr_lobbyRed/spr_lobbyRed.yy",},"order":6,},
+    {"id":{"name":"WIN_EXE","path":"objects/WIN_EXE/WIN_EXE.yy",},"order":2,},
     {"id":{"name":"spr_lobbyBlue","path":"sprites/spr_lobbyBlue/spr_lobbyBlue.yy",},"order":5,},
     {"id":{"name":"spr_player_downleft_run","path":"sprites/spr_player_downleft_run/spr_player_downleft_run.yy",},"order":1,},
     {"id":{"name":"spr_colTriangleDownRight","path":"sprites/spr_colTriangleDownRight/spr_colTriangleDownRight.yy",},"order":2,},
