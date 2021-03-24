@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Earth",
-    "path": "sprites/Earth/Earth.yy",
+    "name": "Configserver",
+    "path": "sprites/Configserver/Configserver.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,15 +20,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":6,"collisionObjectId":null,"parent":{"name":"mm_configureserver","path":"objects/mm_configureserver/mm_configureserver.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Dashboard",
-    "path": "folders/Objects/Dashboard.yy",
+    "name": "Menu",
+    "path": "folders/Objects/Menu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "MapView",
+  "name": "mm_configureserver",
   "tags": [],
   "resourceType": "GMObject",
 }

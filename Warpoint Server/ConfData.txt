@@ -1,5 +1,5 @@
 ------- NETWORK SETTINGS -------
-Network Mode - Local/Global (EXPERIMENTAL)
+Network Mode - Local/Global
 IP
 Port - Default/Custom
 
@@ -15,3 +15,9 @@ Anticheat - Enable/Disable
 Speedhack protection - Enable/Disable
 Valuehack protection - Enable/Disable
 Itemhack protection - Enable/Disable
+
+------- DEVELOPER SETTINGS -------
+Developer Mode - Enable/Disable
+Advanced Logging - Enable/Disable
+Packet Logging - Enable/Disable
+Full Report - Enable/Disable

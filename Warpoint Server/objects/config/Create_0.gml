@@ -18,7 +18,6 @@ if (!(file_exists(configfile))) {show_message(
 	);
 	room_goto(menu);
 	instance_destroy();
-	show_debug_message("BRUH");
 	} else {
 
 ini_open(configfile);
@@ -45,3 +44,6 @@ ini_close();
 
 room_goto(menu);
 }
+
+// Internal Configuration
+global.string_split_list = ds_list_create();
