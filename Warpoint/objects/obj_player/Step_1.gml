@@ -9,4 +9,7 @@ if(obj_moveCircle.v > 0){
 
 }
 }
-
+draw = 0
+if(shop = 1){
+speed = 0	
+}

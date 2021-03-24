@@ -45,5 +45,7 @@ default: break;
 }
 }
 }
-
+if(shop = 1){
+speed = 0	
+}
 
