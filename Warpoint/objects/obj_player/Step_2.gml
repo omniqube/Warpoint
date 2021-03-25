@@ -8,7 +8,7 @@
 if instance_exists(obj_moveCircle){
 if(obj_moveCircle.v > 0){
 	if(collide = 0){
-	direction = obj_moveCircle.angle	
+direction = obj_moveCircle.angle	
 	}
 if(direction >= 0 && direction <= 90){
 rot = 0	

@@ -18,7 +18,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"WIN_EXE","path":"objects/WIN_EXE/WIN_EXE.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_intro","path":"objects/obj_intro/obj_intro.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -27,7 +27,7 @@
     "path": "folders/Objects/Engine.yy",
   },
   "resourceVersion": "1.0",
-  "name": "WIN_EXE",
+  "name": "obj_intro",
   "tags": [],
   "resourceType": "GMObject",
 }

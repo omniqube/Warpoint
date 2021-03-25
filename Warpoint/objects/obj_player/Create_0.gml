@@ -25,4 +25,6 @@ sniper = 0;
 ninja = 0;
 berserker = 0;
 
-event_user(0)
+name = "default";
+
+if (global.onlineMode = true) {event_user(0)}

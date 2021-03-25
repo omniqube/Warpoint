@@ -6,3 +6,6 @@
 
 /* */
 /*  */
+
+
+if (global.developerMode && !global.onlineMode) {instance_destroy();}

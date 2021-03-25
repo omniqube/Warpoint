@@ -16,3 +16,9 @@ draw_set_color(c_dkgray)
 draw_set_alpha(0.25)
 draw_circle(120+1039,599,119,false)
 draw_set_alpha(1)
+
+if (global.onlineMode = false) {
+	draw_set_color(c_dkgray)
+	draw_text(0, 0, "OFFLINE MODE")
+	
+	}
