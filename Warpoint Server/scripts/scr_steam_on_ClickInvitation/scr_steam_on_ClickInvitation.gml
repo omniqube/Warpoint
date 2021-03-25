@@ -1,7 +1,7 @@
 /// @description scr_steam_on_ClickInvitation(SteamID, LobbyID);
 /// @param SteamID
 /// @param  LobbyID
-function scr_steam_on_ClickInvitation() {
+function scr_steam_on_ClickInvitation(steamid, lobbyid) {
 
 	// Go to lobby room
 	room_goto(rm_online_lobby);

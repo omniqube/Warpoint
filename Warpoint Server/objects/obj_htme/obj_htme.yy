@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_gmnet",
+    "path": "sprites/spr_gmnet/spr_gmnet.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
