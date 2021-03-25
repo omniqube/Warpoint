@@ -13,3 +13,4 @@ draw = 0
 if(shop = 1){
 speed = 0	
 }
+shopcollide = 0;

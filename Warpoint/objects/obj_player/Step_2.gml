@@ -2,8 +2,8 @@
 // You can write your code in this editor
 /// @description Insert description here
 // You can write your code in this editor
-show_debug_message("direction"+string(direction))
-show_debug_message(speed)
+//show_debug_message("direction"+string(direction))
+//show_debug_message(speed)
 
 if instance_exists(obj_moveCircle){
 if(obj_moveCircle.v > 0){
@@ -48,4 +48,23 @@ default: break;
 if(shop = 1){
 speed = 0	
 }
+if(shopcollide = 1){
+	if instance_exists(obj_shootCircle){
+obj_shootCircle.active = 0
+obj_shootCircle.sprite_index = spr_forge
 
+	
+	
+	
+	
+}
+}else{
+	if instance_exists(obj_shootCircle){
+obj_shootCircle.sprite_index = spr_moveCircle
+
+	
+	
+	
+	
+}
+}

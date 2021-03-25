@@ -17,3 +17,10 @@ phase = 0
 hasweapon = 0
 hasarmor = 0
 enchant = 0
+shopcollide = 0;
+//
+ranged = 0;
+minigun = 0;
+sniper = 0;
+ninja = 0;
+berserker = 0;

@@ -1,4 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-shopcollide = 1
+show_debug_message("DESTROYING")
