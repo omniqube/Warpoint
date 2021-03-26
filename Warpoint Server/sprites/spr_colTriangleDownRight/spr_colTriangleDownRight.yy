@@ -1,6 +1,6 @@
 {
   "bboxMode": 0,
-  "collisionKind": 1,
+  "collisionKind": 0,
   "type": 0,
   "origin": 0,
   "preMultiplyAlpha": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0620ccea-bbd7-4655-afea-817f52e8121e","path":"sprites/spr_colSquare/spr_colSquare.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0620ccea-bbd7-4655-afea-817f52e8121e","path":"sprites/spr_colSquare/spr_colSquare.yy",},"LayerId":{"name":"2c943de3-cdaf-4e66-a9a9-c7eef26e04f2","path":"sprites/spr_colSquare/spr_colSquare.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_colSquare","path":"sprites/spr_colSquare/spr_colSquare.yy",},"resourceVersion":"1.0","name":"0620ccea-bbd7-4655-afea-817f52e8121e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0620ccea-bbd7-4655-afea-817f52e8121e","path":"sprites/spr_colTriangleDownRight/spr_colTriangleDownRight.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0620ccea-bbd7-4655-afea-817f52e8121e","path":"sprites/spr_colTriangleDownRight/spr_colTriangleDownRight.yy",},"LayerId":{"name":"2c943de3-cdaf-4e66-a9a9-c7eef26e04f2","path":"sprites/spr_colTriangleDownRight/spr_colTriangleDownRight.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_colTriangleDownRight","path":"sprites/spr_colTriangleDownRight/spr_colTriangleDownRight.yy",},"resourceVersion":"1.0","name":"0620ccea-bbd7-4655-afea-817f52e8121e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_colSquare","path":"sprites/spr_colSquare/spr_colSquare.yy",},
+    "spriteId": {"name":"spr_colTriangleDownRight","path":"sprites/spr_colTriangleDownRight/spr_colTriangleDownRight.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4a3d8679-66ea-4641-9819-2b34a7d59e3f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0620ccea-bbd7-4655-afea-817f52e8121e","path":"sprites/spr_colSquare/spr_colSquare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9b73e26f-ee6b-4c2f-b555-abeb39528e45","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0620ccea-bbd7-4655-afea-817f52e8121e","path":"sprites/spr_colTriangleDownRight/spr_colTriangleDownRight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_colSquare","path":"sprites/spr_colSquare/spr_colSquare.yy",},
+    "parent": {"name":"spr_colTriangleDownRight","path":"sprites/spr_colTriangleDownRight/spr_colTriangleDownRight.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_colSquare",
+    "name": "spr_colTriangleDownRight",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -72,7 +72,7 @@
     "path": "folders/Sprites/Warpoint/collision.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_colSquare",
+  "name": "spr_colTriangleDownRight",
   "tags": [],
   "resourceType": "GMSprite",
 }

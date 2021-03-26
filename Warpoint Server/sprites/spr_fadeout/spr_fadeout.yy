@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0620ccea-bbd7-4655-afea-817f52e8121e","path":"sprites/spr_colSquare/spr_colSquare.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0620ccea-bbd7-4655-afea-817f52e8121e","path":"sprites/spr_colSquare/spr_colSquare.yy",},"LayerId":{"name":"2c943de3-cdaf-4e66-a9a9-c7eef26e04f2","path":"sprites/spr_colSquare/spr_colSquare.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_colSquare","path":"sprites/spr_colSquare/spr_colSquare.yy",},"resourceVersion":"1.0","name":"0620ccea-bbd7-4655-afea-817f52e8121e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"45e87be9-ec82-4eb0-9cf1-e3b8807c0769","path":"sprites/spr_fadeout/spr_fadeout.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"45e87be9-ec82-4eb0-9cf1-e3b8807c0769","path":"sprites/spr_fadeout/spr_fadeout.yy",},"LayerId":{"name":"9103b540-120e-4804-9288-f590f4a4931b","path":"sprites/spr_fadeout/spr_fadeout.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_fadeout","path":"sprites/spr_fadeout/spr_fadeout.yy",},"resourceVersion":"1.0","name":"45e87be9-ec82-4eb0-9cf1-e3b8807c0769","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_colSquare","path":"sprites/spr_colSquare/spr_colSquare.yy",},
+    "spriteId": {"name":"spr_fadeout","path":"sprites/spr_fadeout/spr_fadeout.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4a3d8679-66ea-4641-9819-2b34a7d59e3f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0620ccea-bbd7-4655-afea-817f52e8121e","path":"sprites/spr_colSquare/spr_colSquare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"703cd05a-de7e-4684-84dd-8584c9fe95d0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"45e87be9-ec82-4eb0-9cf1-e3b8807c0769","path":"sprites/spr_fadeout/spr_fadeout.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_colSquare","path":"sprites/spr_colSquare/spr_colSquare.yy",},
+    "parent": {"name":"spr_fadeout","path":"sprites/spr_fadeout/spr_fadeout.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_colSquare",
+    "name": "spr_fadeout",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2c943de3-cdaf-4e66-a9a9-c7eef26e04f2","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9103b540-120e-4804-9288-f590f4a4931b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "collision",
-    "path": "folders/Sprites/Warpoint/collision.yy",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_colSquare",
+  "name": "spr_fadeout",
   "tags": [],
   "resourceType": "GMSprite",
 }
