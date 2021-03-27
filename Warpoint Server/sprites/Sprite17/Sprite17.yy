@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6a70c93b-ec7d-4c24-879a-1f1a663f581d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Warpoint",
+    "path": "folders/Sprites/Warpoint.yy",
   },
   "resourceVersion": "1.0",
   "name": "Sprite17",

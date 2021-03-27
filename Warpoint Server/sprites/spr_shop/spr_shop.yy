@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3f177a6e-fa35-45a2-ac0b-63931a040eb9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "shop",
+    "path": "folders/Sprites/Warpoint/shop.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_shop",
