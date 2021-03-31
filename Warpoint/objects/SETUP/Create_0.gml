@@ -17,8 +17,8 @@ function doDeveloperMode(online) {
 }
 
 // !!! TOTO ZMENIT PRE DEVELOPMENT !!!
-// doDeveloperMode(true) // true = offline mode; false = online mode
-global.onlineMode = false;
+doDeveloperMode(true) // true = offline mode; false = online mode
+
 
 // CATCH COMMAND LINE ARGUMENTS
 var p_num;
