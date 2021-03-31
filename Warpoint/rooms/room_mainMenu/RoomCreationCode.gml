@@ -1,1 +1,1 @@
-room_goto(room_map)
+//room_goto(room_map)
