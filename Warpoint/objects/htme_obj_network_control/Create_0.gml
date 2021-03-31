@@ -8,4 +8,4 @@
 /*  */
 
 
-if (!global.onlineMode) {instance_destroy();}
+if (global.developerMode && !global.onlineMode) {instance_destroy();}
